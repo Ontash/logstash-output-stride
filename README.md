@@ -11,7 +11,7 @@ Logstash provides infrastructure to automatically generate documentation for thi
 
 ### Description
 
-This output allows you to write events to [Stride](www.stride.com).
+This output allows you to write events to [Stride](https://www.stride.com).
 
 ## Need Help?
 
