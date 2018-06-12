@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-output-stride'
-  s.version = '0.8.1'
+  s.version = '0.8.2'
   s.licenses = ['Apache-2.0']
   s.summary = "This logstash ouput plugin allows posting messages to stride rooms"
   s.description = "This gem is a Logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/logstash-plugin install gemname. This gem is not a stand-alone program"

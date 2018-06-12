@@ -41,7 +41,7 @@ class LogStash::Outputs::Stride < LogStash::Outputs::Base
     message = event.sprintf(@message)
     priority = event.sprintf(@priority)
 
-    post_message(access_token,cloud_id,conversation_id,host,type,severity,message)
+    post_message(access_token,cloud_id,conversation_id,host,type,priority,message)
     
   rescue Exception => e
     puts '**** ERROR ****'
@@ -50,7 +50,7 @@ class LogStash::Outputs::Stride < LogStash::Outputs::Base
 
   # sends the message to stride
   public
-  def post_message(access_token,cloud_id,conversation_id,host,type,severity,message)
+  def post_message(access_token,cloud_id,conversation_id,host,type,priority,message)
     
     # format of the log
     message = %Q|#{Time.now} : #{message}|
